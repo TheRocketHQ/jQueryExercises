@@ -13,17 +13,17 @@
     <p>another p</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    // see dom
-    // console.dir(document);
-    // $ alias for jquery object
-    // when dom is ready run function
-    // $(document).ready(function(){
-    //     console.log('jquery loaded :'+window.jquery)
+    // making it in local scope
+    // (function($){
+    //   $('h1').hide();
     // })
-    // same as
+    
     $(function(){
-        console.log(window.jquery)
-    });
+        var a = "hello world";
+    function myFunOne(){
+        console.log(a);
+    }
+    })
     </script>
 </body>
-</html>
+</html> 
